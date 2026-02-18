@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar for dark mode */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Loader animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.4;
+    filter: blur(20px);
+  }
+  50% {
+    opacity: 0.8;
+    filter: blur(30px);
+  }
+}
+
+.loader-ring {
+  animation: spin 1.5s linear infinite;
+}
+
+.glow-pulse {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Text glow effect */
+.text-glow {
+  text-shadow: 0 0 40px rgba(100, 180, 255, 0.15), 0 0 80px rgba(100, 180, 255, 0.05);
+}
+
+.text-glow-strong {
+  text-shadow: 0 0 30px rgba(100, 180, 255, 0.3), 0 0 60px rgba(100, 180, 255, 0.1);
+}
+
+/* Touch behavior for mobile */
+.scroll-container {
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+}
