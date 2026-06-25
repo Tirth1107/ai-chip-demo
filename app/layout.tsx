@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Laxraj Infotech — A Demo By Laxraj Infotech",
+  title: "Tirth Joshi — A Demo By Tirth Joshi",
   description:
-    "A Demo By Laxraj Infotech — Experience the NeuralCore X1: 256 billion parameters, built for speed, designed for scale.",
+    "A Demo By Tirth Joshi — Experience the NeuralCore X1: 256 billion parameters, built for speed, designed for scale.",
 };
 
 export default function RootLayout({
