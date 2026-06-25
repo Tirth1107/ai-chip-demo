@@ -8,7 +8,7 @@ export default function Home() {
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.6)]" />
           <span className="text-sm font-semibold tracking-[0.15em] text-white/80 uppercase">
-            Laxraj Infotech
+            Tirth Joshi
           </span>
         </div>
         <div className="hidden md:flex items-center gap-8">
@@ -69,11 +69,11 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-cyan-400/60" />
               <span className="text-xs tracking-[0.15em] text-white/30 uppercase">
-                Laxraj Infotech
+                Tirth Joshi
               </span>
             </div>
             <p className="text-xs text-white/20">
-              © 2026 Laxraj Infotech. All rights reserved.
+              © 2026 Tirth Joshi. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a
@@ -81,7 +81,7 @@ export default function Home() {
                 target="_blank"
                 className="text-xs text-white/20 hover:text-white/50 transition-colors"
               >
-                Made with ❤️ by Laxraj Infotech
+                Made with ❤️ by Tirth Joshi
               </a>
             </div>
           </div>
